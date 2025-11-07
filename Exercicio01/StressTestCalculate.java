@@ -1,4 +1,3 @@
-
 import interfaces.IStrategyCalculateRisk;
 
 public class StressTestCalculate implements IStrategyCalculateRisk {

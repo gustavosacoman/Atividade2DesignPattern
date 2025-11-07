@@ -3,14 +3,15 @@ public class Main {
         FinancialRiskCalculator calculator = new FinancialRiskCalculator();
 
         calculator.setStrategy(new CalculateVaR());
-        double var = calculator.executeStrategy(1_000_000);
-        System.out.println("Value at Risk: " + var);
+        double var = calculator.executeStrategy(7_294.525);
+        System.out.println("Value at Risk 7294.525: " + var);
 
         calculator.setStrategy(new CalculateExpectedShortFall());
-        double es = calculator.executeStrategy(1_000_000);
-        System.out.println("Expected Shortfall: " + es);
+        double es = calculator.executeStrategy(11_671.24);
+        System.out.println("Expected Shortfall 11671.24: " + es);
 
-        double expectedShort = calculator.executeStrategy(500_000);
-        System.out.println("Expected Shortfall for 500,000: " + expectedShort);
+        calculator.setStrategy(new StressTestCalculate());
+        double expectedShort = calculator.executeStrategy(51_061.675);
+        System.out.println("Stress Test 51061.675: " + expectedShort);
     }
 }
