@@ -1,10 +1,10 @@
 
 import java.util.HashMap;
 
-public class GatewayBanckSystemLegacy implements IProcessTrasactions {
+public class GatewayBankSystemLegacy implements IProcessTrasactions {
     private IBanckSystemLegacy banckSystemLegacy;
 
-    public GatewayBanckSystemLegacy(IBanckSystemLegacy banckSystemLegacy) {
+    public GatewayBankSystemLegacy(IBanckSystemLegacy banckSystemLegacy) {
         this.banckSystemLegacy = banckSystemLegacy;
     }
 
